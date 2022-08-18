@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+}
+a {
+  color: rgb(2, 2, 2);
+  font-size: 1em;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+.containter-flex {
+  width: 90%;
+  margin: auto;
+}
+
+/* NAVEGATION*/
+.nav-main {
+  border-radius: .3em;
+  background-color: rgb(207, 207, 207);
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 20px 0;
+  font-size: 1.4em;
+}
+.nav-brand {
+  padding-left: 10px;
+  width: 6em;
+}
+
+/* NAV-LEFT*/
+.nav-main ul {
+  display: flex;
+}
+.nav-main ul li {
+  padding: 25px;
+  align-items: center;
+}
+
+
+.nav-main ul li a:hover {
+  border-bottom-left-radius:.3em;
+  border-bottom-right-radius: .3em;
+  padding: 10px;
+  background-color: rgb(161, 161, 161);
+
+}
+.nav-menu-lefth {
+  flex: 1;
+  padding-left: 20px;
+
+}
+ .nav main ul .dropdown-menu{
+  display: block;
+}
+
+
+.nav-menu-lefth i{
+    padding: 0 .5em;
+}
+
+.menu-btn{
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 30px;
+  z-index: 2;
+  font-size: 1.6rem;
+  display: none;   
+}
+
+/* MAIN */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.container-boton{
+  background-color: #2e6329;
+  border: 1px solid #fff;
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px;
+  transition: ease 0.3s;
+}
+
+.container-boton:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.boton{
+  width: 50px;
+  transition: ease 1s;
+}
+
+
+.flex-item{
+box-shadow: 10px 10px 7px 7px rgb(68, 68, 68);
+
+
+margin: 10px;
+}
+
+.art-1{
+text-align: justify;
+padding: 30px;
+width: 67%;
+margin: 10px 0;
+}
+.art-1 img{
+  width: 60%;
+  display: flex;
+}
+.contactos{
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 22px;
+  flex-basis: 29%;
+  height: 12em;
+  position: sticky;
+  top:3em;
+}
+
+.art-2{
+  margin: 40px 0;
+  outline: none;
+  box-shadow: 10px 10px 7px 7px rgb(68, 68, 68);
+  text-align: center;
+  width: 60%;
+  height: auto;
+}
+.art-2__img{
+  width: 80%;
+  height: 30em;
+  margin: auto;
+}
+
+.footer{
+  color: rgb(0, 42, 53);
+  border-radius: .3em;
+  width: 100%;
+  height: 3em;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: grey;
+  padding:auto;
+  margin: 1.3em;
+  align-items: center;
+
+}
+
+
+
+
+/*  MISION  / VISION  / VALORES */
+
+
+.art-3{
+width: 60%;
+text-align: justify;
+padding: 20px;
+}
+
+
+.art-4{
+  margin: 40px 0;
+  outline: none;
+  box-shadow: 10px 10px 7px 7px rgb(68, 68, 68);
+  text-align: center;
+  width: 60%;
+  height: auto;
+}
+
+.art-4__img{
+  width: 80%;
+  height: 30em;
+  margin: auto;
+  padding-bottom: 1.4em;
+}
+.art-5{
+  flex-basis: 60%;
+  padding: 10px;
+}
+
+.art-5__img{
+  width: 25em;
+  box-shadow: none;
+ display: flex;
+}
+
+.art-6{
+  flex-grow: 1;
+  flex-basis: 60%;
+  display: flex;
+  font-size: 1.3em;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.art-6__tittle{
+flex-shrink: 0;
+flex-basis: 100%;
+}
+.art-6__img{
+  align-self: center;
+}
+.art-7{
+ flex-basis: 60%;
+ padding: 10px;
+}
+@media(max-width: 955px){
+  .nav-main .nav-menu-lefth{
+    display:block;
+    position:absolute;
+    background-color: rgb(148, 148, 148);
+    opacity: 0.98;
+    top:0;
+    left:0 ;
+    height: 100% ;
+    transform:translateX(-400px);
+    transition: transform .5s ease-in-out;
+  }
+  
+  .nav-main .nav-menu-lefth.show{
+transform: translateX(0);
+display: block;
+  }
+  .nav-main  .nav-menu-right{
+    margin-right: 50px;
+  }
+  .containter-flex{
+    width: 100%;
+  }
+  .menu-btn{
+    display: block;
+  }
+  .contactos{
+    position: relative;
+    flex-basis: 80%;
+    margin:auto;
+    margin-bottom: 3em;
+  }
+  .main{
+    padding: 30px;
+  }
+
+  .art-1{
+    flex-basis: 100%;
+  }
+  .art-2{
+    flex-basis: 100%;
+  }
+  .art-3{
+    flex-basis: 100%;
+  }
+  .art-4{
+    flex-basis: 100%;
+  }
+  .art-5{
+    flex-basis: 100%;
+  }
+  .art-6{
+    flex-basis: 100%;
+  }
+  .art-7{
+    flex-basis: 100%;
+  }
+
+  footer{ 
+    background-color: rgb(206, 206, 206);
+   
+  }
+}

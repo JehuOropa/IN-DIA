@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 20px;
+
+}
+
+.container-flex{
+display: flex;
+width: 90%;
+margin: auto;
+}
+
+
+.primer{
+    background-color: blueviolet;
+}
+
+.caja-flexible{
+    display: flex;
+
+}
+
+.main{
+    display: flex;
+}
